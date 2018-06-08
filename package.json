@@ -1,0 +1,24 @@
+{
+  "name": "slackemoji",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iShawnWang <iShawnWang2333@gmail.com> (https://iShawn.Wang)",
+  "license": "ISC",
+  "dependencies": {
+    "buffer-to-stream": "^1.0.0",
+    "canvas": "^1.6.11",
+    "delay": "^3.0.0",
+    "es6-promise": "^4.2.4",
+    "fabric": "^2.3.1",
+    "form-data": "^2.3.2",
+    "isomorphic-fetch": "^2.2.1",
+    "js-yaml": "^3.12.0",
+    "p-all": "^1.0.0",
+    "p-series": "^1.1.0"
+  }
+}
