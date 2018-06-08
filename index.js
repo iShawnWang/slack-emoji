@@ -75,7 +75,6 @@ const delay = require("delay");
 const pSeries = require("p-series");
 const pAll = require("p-all");
 
-let work = false;
 const emoji_json = {
   title: "LETTERS",
   emojis: []
@@ -112,11 +111,6 @@ LETTERS.forEach((letter, index) => {
   const filePath = path.join(dir, fileName);
   fs.writeFileSync(filePath, buf);
 
-  // if(work){
-  //   return
-  // }
-  // work = true
-
   const imageFile = fs.createReadStream(filePath);
 
   let body = new FormData();
@@ -149,7 +143,6 @@ pSeries(jobs).then(result => {
 });
 
 console.log(JSON.stringify(emoji_json));
-debugger;
 
 function isLowerCase(str) {
   return str.toUpperCase() != str;
