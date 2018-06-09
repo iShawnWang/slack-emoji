@@ -66,6 +66,7 @@ const CANVAS_SIZE = {
   height: 34
 };
 const NAMESPACE = "_____";
+const suffix = "_";
 
 const fs = require("fs");
 const fabric = require("fabric").fabric;
@@ -124,7 +125,7 @@ LETTERS.forEach((letter, index) => {
       .then(success => {
         console.log(success);
         emojis.push({
-          name: `${NAMESPACE}_${letter}`,
+          name: `${NAMESPACE}_${letter.toLowerCase()}${suffix}`,
           src: success.data.url
         });
       })
