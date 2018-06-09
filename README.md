@@ -6,9 +6,9 @@ generate Slack emoji with text
 
 ## Usage
 
-1.  npm i
-2.  npm run start
-3.  emojipacks -s <subdomain> -e <email> -p <password> -y <yaml_file>
+1.  `npm i`
+2.  `npm run start`
+3.  `emojipacks -s <subdomain> -e <email> -p <password> -y <yaml_file>`
 4.  2fa code if need
 
 > ## Ref
